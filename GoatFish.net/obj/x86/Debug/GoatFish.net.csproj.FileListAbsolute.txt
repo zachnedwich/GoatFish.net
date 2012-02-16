@@ -1,0 +1,5 @@
+d:\work\.net\Other\GoatFish.net\GoatFish.net\bin\Debug\GoatFish.net.exe
+d:\work\.net\Other\GoatFish.net\GoatFish.net\bin\Debug\GoatFish.net.pdb
+d:\work\.net\Other\GoatFish.net\GoatFish.net\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\work\.net\Other\GoatFish.net\GoatFish.net\obj\x86\Debug\GoatFish.net.exe
+d:\work\.net\Other\GoatFish.net\GoatFish.net\obj\x86\Debug\GoatFish.net.pdb

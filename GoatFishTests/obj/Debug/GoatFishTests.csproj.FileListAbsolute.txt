@@ -1,0 +1,9 @@
+D:\work\.net\Other\GoatFish.net\GoatFishTests\bin\Debug\GoatFishTests.dll
+D:\work\.net\Other\GoatFish.net\GoatFishTests\bin\Debug\GoatFishTests.pdb
+D:\work\.net\Other\GoatFish.net\GoatFishTests\bin\Debug\GoatFish.net.exe
+D:\work\.net\Other\GoatFish.net\GoatFishTests\bin\Debug\GoatFish.net.pdb
+D:\work\.net\Other\GoatFish.net\GoatFishTests\bin\Debug\GoatFish.net_Accessor.exe
+D:\work\.net\Other\GoatFish.net\GoatFishTests\bin\Debug\GoatFish.net_Accessor.pdb
+D:\work\.net\Other\GoatFish.net\GoatFishTests\obj\Debug\ResolveAssemblyReference.cache
+D:\work\.net\Other\GoatFish.net\GoatFishTests\obj\Debug\GoatFishTests.dll
+D:\work\.net\Other\GoatFish.net\GoatFishTests\obj\Debug\GoatFishTests.pdb
