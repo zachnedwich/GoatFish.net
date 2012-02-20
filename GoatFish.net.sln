@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoatFish.net-cli", "GoatFish.net-cli\GoatFish.net-cli.csproj", "{F603DBE9-20BC-400E-A71E-65DE65265F64}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = GoatFish.net.vsmdi
@@ -45,6 +47,16 @@ Global
 		{7139089A-603B-42E1-95EB-03A47FEA2388}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7139089A-603B-42E1-95EB-03A47FEA2388}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{7139089A-603B-42E1-95EB-03A47FEA2388}.Release|x86.ActiveCfg = Release|Any CPU
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Debug|x86.ActiveCfg = Debug|x86
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Debug|x86.Build.0 = Debug|x86
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Release|Any CPU.ActiveCfg = Release|x86
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Release|Mixed Platforms.Build.0 = Release|x86
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Release|x86.ActiveCfg = Release|x86
+		{F603DBE9-20BC-400E-A71E-65DE65265F64}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

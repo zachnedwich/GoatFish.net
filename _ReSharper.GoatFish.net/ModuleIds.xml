@@ -1,4 +1,5 @@
 <Modules>
   <Module PersistentId="9372A61E-234C-477E-B47B-00E474D2FA75" ModuleId="GoatFish.net" />
   <Module PersistentId="7139089A-603B-42E1-95EB-03A47FEA2388" ModuleId="GoatFishTests" />
+  <Module PersistentId="F603DBE9-20BC-400E-A71E-65DE65265F64" ModuleId="GoatFish.net-cli" />
 </Modules>

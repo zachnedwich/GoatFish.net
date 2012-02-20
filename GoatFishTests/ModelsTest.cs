@@ -89,24 +89,14 @@ namespace GoatFishTests
         ///A test for Save
         ///</summary>
         [TestMethod()]
-        public void SaveTest()
+        public void InsertTest()
         {
             var entity = new KeyValuePair<string, string>("key", "value"); // TODO: Initialize to an appropriate value
             Models.Save(entity);
             Assert.AreEqual(entity, Models.Find("key"));
         }
 
-        /// <summary>
-        ///A test for Save
-        ///</summary>
-        [TestMethod()]
-        public void SaveTest1()
-        {
-            const string key = "key";
-            const string value = "value";
-            Models.Save(key, value);
-            Assert.AreEqual(value, Models.Find(key).Value);
-        }
+
 
         /// <summary>
         ///A test for Find
@@ -114,11 +104,32 @@ namespace GoatFishTests
         [TestMethod()]
         public void FindTest()
         {
-            const string uuid = "key"; // TODO: Initialize to an appropriate value
-            var expected = new KeyValuePair<string, string>("key", "value"); // TODO: Initialize to an appropriate value
+            const string uuid = "key";
+            var expected = new KeyValuePair<string, string>("key", "value");
             KeyValuePair<string, string> actual = Models.Find(uuid);
+            Models.Save(expected);
             Assert.AreEqual(expected, actual);
 
+        }
+
+        /// <summary>
+        ///A test for Find All
+        ///</summary>
+        [TestMethod()]
+        public void FindAllTest()
+        {
+            const string uuid = "key";
+            const string uuid2 = "another key";
+            var key1 = new KeyValuePair<string, string>(uuid, uuid2);
+            var key2 = new KeyValuePair<string, string>(uuid2, uuid);
+            IDictionary<string, string> expectedDictionary = new Dictionary<string, string>();
+            expectedDictionary.Add(key1);
+            expectedDictionary.Add(key2);
+            Models.Save(uuid, uuid2);
+            Models.Save(uuid2, uuid);
+            var actual = Models.Find();
+            Assert.AreEqual(actual["key"], uuid2);
+            Assert.AreEqual(actual["another key"], uuid);
         }
 
         /// <summary>
@@ -128,11 +139,38 @@ namespace GoatFishTests
         public void DeleteTest()
         {
             const string uuid = "key"; // TODO: Initialize to an appropriate value
-            var empty = new KeyValuePair<string, string>("", "");
+            var empty = new KeyValuePair<string, string>("empty", "empty");
             Models.Delete(uuid);
             Assert.AreEqual(empty, Models.Find(uuid));
         }
 
-      
+        /// <summary>
+        ///A test for Update (Save, checks if key exists, then updates key).
+        ///</summary>
+        [TestMethod()]
+        public void UpdateTest()
+        {
+            const string uuid = "key"; // TODO: Initialize to an appropriate value
+            var expected = new KeyValuePair<string, string>("key", "value");
+            var inital = new KeyValuePair<string, string>("key", "empty");
+            Models.Save(inital);
+            Assert.AreEqual(inital, Models.Find(uuid));
+            Models.Save(expected);
+            Assert.AreEqual(expected, Models.Find(uuid));
+        }
+
+        /// <summary>
+        ///A test for Save
+        ///</summary>
+        [TestMethod()]
+        public void ClearTest()
+        {
+            const string key = "key";
+            const string value = "value";
+            var empty = new KeyValuePair<string, string>("empty", "empty");
+            Models.Save(key, value);
+            Models.Clear();
+            Assert.AreEqual(empty, Models.Find(key));
+        }
     }
 }
