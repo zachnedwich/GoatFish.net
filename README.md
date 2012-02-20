@@ -1,17 +1,3 @@
-Run GoatFish.net-cli/bin/Debug/GoatFish.net-cli.exe
-
-Type 'help' for a list of commands.
-
-To use in your projects, add a reference to GoatFish.net.dll, also requires System.Data.SQLite.dll
-
-Example usage:
-	//Initliaze GoatFish.net db
-	
-
-
-
-And that's it!
-
 Description
 ===========
 
@@ -35,34 +21,32 @@ To use in your projects
 
 Usage
 -----
+To use from command prompt, run ``GoatFish.net-cli/bin/Debug/GoatFish.net-cli.exe``. Type ``help`` for a list of commands.
+To use ``goatfish.net``, in your projects you first need to create a new instance of the Models class. 
 
-To use ``goatfish.net``, you first need to create a new instance of the Models class. Use
+Use
 ``Models model = new Models();``
 
-// Add a new key/value pair to GoatFish
+# Add a new key/value pair to GoatFish
  	Models.Save("key", "value");
 
-// Find entity with key 'key'
+# Find entity with key 'key'
 	Console.WriteLine(Models.Find("key");
 	<key,value>
 
-// Find all entities, iterate through and print
+# Find all entities, iterate through and print
 	foreach(var v in Models.Find())
 	{
 		Console.WriteLine(v);
 	}
 	<key, value>
-// Delete entity
+# Delete entity
 	Models.Delete("key");
-// Try and find deleted key
+# Try and find deleted key
 	Console.WriteLine(Models.Find("key"));
 	<empty, empty>
-    # Delete the element.
-    >>> foo.delete()
 
-    # Try to retrieve all elements again.
-    >>> [test.bar for test in Test.find()]
-    []
+
 
 
 License
