@@ -116,6 +116,10 @@ namespace GoatFish.net
         {
             return _connection.Database;
         }
+        public static string GetVersion()
+        {
+            return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        }
     }
 
     public class GoatFishSyntaxException : Exception

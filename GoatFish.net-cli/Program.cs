@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using GoatFish.net;
 
@@ -112,6 +113,13 @@ namespace GoatFish.net_cli
                         "GoatFish.net Help -- COMMANDS\n set entry -- 'set key value'\n get entry by key -- 'get key' \n delete entry --'del key' \n" +
                         " get all entries -- 'all'\n clear entries -- 'clear'\n exit -- 'exit'");
                 }
+                else if (s.ToLower().StartsWith("about"))
+                {
+
+                    Console.WriteLine("GoatFish.net CLI Version " +System.Reflection.Assembly.GetExecutingAssembly().GetName().Version);
+                    Console.WriteLine("GoatFish.net.dll Version " + Models.GetVersion());
+                }
+
 
                 else
                 {

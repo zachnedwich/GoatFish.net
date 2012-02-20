@@ -5,3 +5,8 @@ D:\work\.net\Other\GoatFish.net\GoatFish.net-cli\bin\Debug\GoatFish.net.pdb
 D:\work\.net\Other\GoatFish.net\GoatFish.net-cli\obj\x86\Debug\GoatFish.net-cli.exe
 D:\work\.net\Other\GoatFish.net\GoatFish.net-cli\obj\x86\Debug\GoatFish.net-cli.pdb
 D:\work\.net\Other\GoatFish.net\GoatFish.net-cli\bin\Debug\GoatFish.net.dll
+D:\work\.net\Other\GoatFish.net\GoatFish.net-cli\bin\Debug\GoatFish.net-cli.exe.manifest
+D:\work\.net\Other\GoatFish.net\GoatFish.net-cli\bin\Debug\GoatFish.net-cli.application
+D:\work\.net\Other\GoatFish.net\GoatFish.net-cli\obj\x86\Debug\GoatFish.net-cli.TrustInfo.xml
+D:\work\.net\Other\GoatFish.net\GoatFish.net-cli\obj\x86\Debug\GoatFish.net-cli.exe.manifest
+D:\work\.net\Other\GoatFish.net\GoatFish.net-cli\obj\x86\Debug\GoatFish.net-cli.application
