@@ -11,14 +11,13 @@ namespace GoatFish.net_cli
     {
         private static void Main(string[] args)
         {
-            Process[] theProcesses = Process.GetProcessesByName("GoatFish.net-cli.exe");
-            theProcesses = Process.GetProcesses();
+            var theProcesses = Process.GetProcesses();
 
             var fi = new FileInfo("GoatFish.net-cli.exe");
-            string fileName = fi.Name.Replace(fi.Extension, string.Empty);
+            var fileName = fi.Name.Replace(fi.Extension, string.Empty);
             fi = null;
-            int currentID = Process.GetCurrentProcess().Id;
-            bool alreadyExists = theProcesses.Any(running => running.ProcessName == fileName && currentID != running.Id);
+            var currentID = Process.GetCurrentProcess().Id;
+            var alreadyExists = theProcesses.Any(running => running.ProcessName == fileName && currentID != running.Id);
             theProcesses = null;
             if (alreadyExists)
             {
@@ -32,7 +31,7 @@ namespace GoatFish.net_cli
                 {
                     InterpretCommand(v);
                 }
-                string argument = ReadInput();
+                var argument = ReadInput();
             }
         }
 
@@ -60,7 +59,9 @@ namespace GoatFish.net_cli
                     {
                         sb.Append(s1[i] + " ");
                     }
-                        Models.Save(s1[0], sb.ToString());
+                    if (String.IsNullOrEmpty(sb.ToString())) throw new GoatFishSyntaxException("Incorrect set syntax. Please provide a key and value.");
+                   
+                        Models.Save(s1[0], sb.ToString().TrimEnd(' '));
                     Console.WriteLine("OK");
                 }
 
@@ -118,9 +119,10 @@ namespace GoatFish.net_cli
                 }
                 ReadInput();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 Console.WriteLine("(error) ERR incorrect syntax -- type 'help' for commands.", s);
+                Console.WriteLine(ex.Message);
                 ReadInput();
             }
         }

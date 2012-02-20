@@ -69,7 +69,7 @@ namespace GoatFishTests
         [TestMethod()]
         public void IsOpenTest()
         {
-            const bool expected = true; // TODO: Initialize to an appropriate value
+            const bool expected = true; // 
             bool actual = Models.IsOpen();
             Assert.AreEqual(expected, actual);
         }
@@ -91,7 +91,7 @@ namespace GoatFishTests
         [TestMethod()]
         public void InsertTest()
         {
-            var entity = new KeyValuePair<string, string>("key", "value"); // TODO: Initialize to an appropriate value
+            var entity = new KeyValuePair<string, string>("key", "value"); // 
             Models.Save(entity);
             Assert.AreEqual(entity, Models.Find("key"));
         }
@@ -138,7 +138,7 @@ namespace GoatFishTests
         [TestMethod()]
         public void DeleteTest()
         {
-            const string uuid = "key"; // TODO: Initialize to an appropriate value
+            const string uuid = "key"; // 
             var empty = new KeyValuePair<string, string>("empty", "empty");
             Models.Delete(uuid);
             Assert.AreEqual(empty, Models.Find(uuid));
@@ -150,7 +150,7 @@ namespace GoatFishTests
         [TestMethod()]
         public void UpdateTest()
         {
-            const string uuid = "key"; // TODO: Initialize to an appropriate value
+            const string uuid = "key"; // 
             var expected = new KeyValuePair<string, string>("key", "value");
             var inital = new KeyValuePair<string, string>("key", "empty");
             Models.Save(inital);

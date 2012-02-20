@@ -117,4 +117,13 @@ namespace GoatFish.net
             return _connection.Database;
         }
     }
+
+    public class GoatFishSyntaxException : Exception
+    {
+     
+        public GoatFishSyntaxException(string message) : base(message)
+        {
+            
+        }
+    }
 }
