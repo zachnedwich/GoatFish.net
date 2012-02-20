@@ -21,7 +21,9 @@ To use in your projects
 
 Usage
 -----
-To use from command prompt, run ``GoatFish.net-cli/bin/Debug/GoatFish.net-cli.exe``. Type ``help`` for a list of commands.
+To use from command prompt, run ``GoatFish.net-cli/bin/Debug/GoatFish.net-cli.exe``. 
+
+Type ``help`` for a list of commands.
 To use ``goatfish.net``, in your projects you first need to create a new instance of the Models class. 
 
 Use
