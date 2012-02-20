@@ -1,0 +1,16 @@
+Run GoatFish.net-cli/bin/Debug/GoatFish.net-cli.exe
+
+Type 'help' for a list of commands.
+
+To use in your projects, add a reference to GoatFish.net.dll, also requires System.Data.SQLite.dll
+
+Example usage:
+	//Initliaze GoatFish.net db
+	Models model = new Models();
+
+	Models.Save("key", "value);
+	
+	Console.WriteLine(Models.Find("key");
+
+And that's it!
+
