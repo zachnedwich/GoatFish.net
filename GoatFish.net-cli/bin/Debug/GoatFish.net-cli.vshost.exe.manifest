@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity version="1.0.0.0" name="GoatFish.net-cli.exe" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="GoatFish.net-cli" version="1.0.0.8" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="GoatFish.net-cli" version="1.0.4433.25149" language="neutral" processorArchitecture="x86" />
     <commandLine file="GoatFish.net-cli.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -48,25 +48,25 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoatFish.net.dll" size="7168">
-      <assemblyIdentity name="GoatFish.net" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="GoatFish.net" version="1.0.4433.25148" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>4Uv5yAB+BKcXEL5LRPUzmAQgmYY=</dsig:DigestValue>
+        <dsig:DigestValue>eOqDOjJqfzPR7LnDlbmb8TL7JeQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoatFish.net-cli.exe" size="8704">
-      <assemblyIdentity name="GoatFish.net-cli" version="1.0.0.8" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="GoatFish.net-cli" version="1.0.4433.25149" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>RA2xX8Iu+bjMZMLJzKHvTDLWMBs=</dsig:DigestValue>
+        <dsig:DigestValue>0jYopGofiyg5UeAMcUC4oEQe6uQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
