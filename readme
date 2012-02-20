@@ -8,7 +8,7 @@ Example usage:
 	//Initliaze GoatFish.net db
 	Models model = new Models();
 
-	Models.Save("key", "value);
+	Models.Save("key", "value");
 	
 	Console.WriteLine(Models.Find("key");
 
