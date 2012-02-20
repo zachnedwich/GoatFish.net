@@ -126,6 +126,7 @@ namespace GoatFish.net_cli
                     Console.WriteLine("(error) ERR unknown command '{0}' -- type 'help' for commands.", s);
                 }
                 ReadInput();
+     
             }
             catch (Exception ex)
             {
